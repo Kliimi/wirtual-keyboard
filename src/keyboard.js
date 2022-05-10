@@ -13,7 +13,8 @@ function renderFuncKeys (keyobject) {
 function  renderKeys (keyobject) {
     
     let key = document.createElement("div");
-    key.classList.add('key', 'simple-key');
+    key.classList.add('key', 'simple-key', 'change-key');
+     localStorage.setItem('lang', 'rus');
      
     
     if (keyobject.rus.value) {
@@ -40,7 +41,7 @@ function  renderKeys (keyobject) {
     if (keyobject.eng.shiftValue) {
         key.setAttribute("eng-shiftValue", keyobject.eng.shiftValue);
     } else {
-        key.setAttribute("eng-shiftValue", keyobject.rus.toUpperCase());
+        key.setAttribute("eng-shiftValue", keyobject.eng.toUpperCase());
     }
     
     

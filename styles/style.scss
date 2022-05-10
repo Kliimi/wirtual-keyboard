@@ -38,6 +38,7 @@ html {
     color: $descr-color;
     border: 1px solid $border-color;
     border-radius: 1rem;
+    text-align: left;
 }
 
 .keyboard {
@@ -72,6 +73,12 @@ html {
                 background: $hover-color;
                 border: 1px solid $hover-color;
                 
+            }
+
+            &:active {
+                background: $active-color;
+                border: 1px solid $active-color;
+                color: white;
             }
                       
             span {

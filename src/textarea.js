@@ -7,3 +7,8 @@ export function implementTextarea () {
 
     return textarea;
 }
+
+export function typingInTextarea (e, letter, textArea) {
+    let letterValue = letter.innerText
+    return textArea.value += letterValue 
+}
